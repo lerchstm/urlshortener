@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    tools:context=".CreateURLShortendActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editBoxShortIdentifier"
+        android:layout_marginTop="200dp"
+        android:hint="Short Identifier" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRedirectURL"
+        android:hint="Redirect URL"
+        android:inputType="textUri"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editBoxRedirectStatus"
+        android:hint="Redirect Status"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editBoxValidThru"
+        android:clickable="true"
+        android:hint="Valid Thru"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCreate"
+        android:text="Create ShortCut"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:indeterminateTint="#1a09d6"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+</LinearLayout>
+</layout>

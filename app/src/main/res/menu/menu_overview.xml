@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:onClick="onMenuItemNewClick"
+        android:title="New" />
+    <item
+        android:onClick="onMenuItemRefreshClick"
+        android:title="Refresh" />
+    <item
+        android:onClick="onMenuItemLogoutClick"
+        android:title="Logout" />
+</menu>
